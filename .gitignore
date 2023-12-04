@@ -1,0 +1,22 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+*/xcuserdata
+
+# Build products
+build/
+DerivedData/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Private user settings
+*.xcuserstate
+
+# Swift Package Manager
+Packages/
+Package.pins
