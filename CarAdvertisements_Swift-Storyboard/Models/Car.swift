@@ -33,8 +33,6 @@ struct Car {
     var isTop = false
     var isVIN = false
     
-    let dollarExchangeRate = 3.19
-    
 }
 
 enum CarBoxes {
