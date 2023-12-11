@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117B072C2B27211F00F92499 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B072B2B27211F00F92499 /* Car.swift */; };
 		11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */; };
 		11FE8EE82B1DC88A00FC69F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */; };
 		11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE92B1DC88A00FC69F9 /* CarsAdsViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		117B072B2B27211F00F92499 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		11FE8EE22B1DC88A00FC69F9 /* CarAdvertisements_Swift-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarAdvertisements_Swift-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117B072A2B27211100F92499 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				117B072B2B27211F00F92499 /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		11FE8ED92B1DC88A00FC69F9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		11FE8EE42B1DC88A00FC69F9 /* CarAdvertisements_Swift-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				117B072A2B27211100F92499 /* Models */,
 				11FE8EF92B25F69200FC69F9 /* Views */,
 				11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */,
 				11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */,
@@ -148,6 +159,7 @@
 			files = (
 				11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */,
 				11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */,
+				117B072C2B27211F00F92499 /* Car.swift in Sources */,
 				11FE8EE82B1DC88A00FC69F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
