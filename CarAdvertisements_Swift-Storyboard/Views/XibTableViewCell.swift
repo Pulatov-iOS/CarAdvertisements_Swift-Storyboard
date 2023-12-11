@@ -17,7 +17,6 @@ final class XibTableViewCell: UITableViewCell {
     @IBOutlet private weak var usdPriceAdLabel: UILabel!
     @IBOutlet private weak var photoCollectionView: UICollectionView!
     @IBOutlet private weak var descriptionAdLabel: UILabel!
-    @IBOutlet private weak var vimAndTopButtonView: UIView!
     @IBOutlet private weak var locationAdLabel: UILabel!
     @IBOutlet private weak var leasingAdLabel: UILabel!
     @IBOutlet private weak var leasingFromAdLabel: UILabel!
@@ -25,6 +24,7 @@ final class XibTableViewCell: UITableViewCell {
     @IBOutlet private weak var leasingDateAdLabel: UILabel!
     @IBOutlet private weak var isHiddenButtonImage: UIImageView!
     @IBOutlet private weak var isFavoriteButtonImage: UIImageView!
+    @IBOutlet private weak var topAndVinButtonsStackView: UIStackView!
     
     @IBAction private func hideButtonTapped(_ sender: Any) {
         print("Hide Button Tapped!")
@@ -48,7 +48,7 @@ final class XibTableViewCell: UITableViewCell {
         photoCollectionView.dataSource = self
         photoCollectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
         photoCollectionView.collectionViewLayout = layout
-        layout.itemSize = CGSize(width: 200, height: 150)
+        layout.itemSize = CGSize(width: 300, height: 250)
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
@@ -65,6 +65,7 @@ final class XibTableViewCell: UITableViewCell {
             currencyAdLabel.text = "р."
             usdPriceAdLabel.text = "≈ \(manager.usdPrice(price: ad.price)) $"
             
+            photos.removeAll()
             for photo in ad.imageNames {
                 self.photos.append(.init(named: photo) ?? UIImage())
             }
@@ -127,6 +128,8 @@ final class XibTableViewCell: UITableViewCell {
             leasingPriceAdLabel.text = "\(String(manager.costOfLeasing(price: ad.price))) BYN"
             leasingDateAdLabel.text = "/месяц"
             
+            addingTopAndVinIcons(isTop: ad.isTop, isVin: ad.isVIN)
+
             changeHideButton()
             changeFavoritesButton()
         }
@@ -145,6 +148,37 @@ final class XibTableViewCell: UITableViewCell {
             isFavoriteButtonImage.image = .init(systemName: "bookmark.fill")
         } else {
             isFavoriteButtonImage.image = .init(systemName: "bookmark")
+        }
+    }
+    
+    func addingTopAndVinIcons(isTop: Bool, isVin: Bool) {
+        
+        if (isTop || isVin) && topAndVinButtonsStackView.arrangedSubviews.count < 2 {
+            let horizontalStackView = UIStackView()
+            horizontalStackView.axis = .horizontal
+            horizontalStackView.spacing = 4
+            topAndVinButtonsStackView.addArrangedSubview(horizontalStackView)
+            topAndVinButtonsStackView.spacing = 8
+            
+            if isTop {
+                let topIconImage = UIImageView(image: UIImage(named: "TopButtonImage"))
+                topIconImage.contentMode = .scaleAspectFit
+                topIconImage.widthAnchor.constraint(equalToConstant: 53).isActive = true
+                topIconImage.heightAnchor.constraint(equalToConstant: 32).isActive = true
+                horizontalStackView.addArrangedSubview(topIconImage)
+            }
+            if isVin {
+                let topIconImage = UIImageView(image: UIImage(named: "VinButtonImage"))
+                topIconImage.contentMode = .scaleAspectFit
+                topIconImage.widthAnchor.constraint(equalToConstant: 50).isActive = true
+                topIconImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
+                horizontalStackView.addArrangedSubview(topIconImage)
+            }
+            
+            let spacerView = UIView()
+            spacerView.setContentHuggingPriority(.defaultLow, for: .horizontal)
+            spacerView.translatesAutoresizingMaskIntoConstraints = false
+            horizontalStackView.addArrangedSubview(spacerView)
         }
     }
 }

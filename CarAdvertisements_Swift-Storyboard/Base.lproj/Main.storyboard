@@ -79,12 +79,63 @@
                     </tabBar>
                     <connections>
                         <segue destination="pBM-Yx-1XE" kind="relationship" relationship="viewControllers" id="GL1-FC-NUd"/>
-                        <segue destination="Fjq-K0-Cpd" kind="relationship" relationship="viewControllers" id="5re-D6-3OO"/>
+                        <segue destination="7ob-ik-tkh" kind="relationship" relationship="viewControllers" id="LQ2-TE-kC2"/>
+                        <segue destination="fMH-O1-BOC" kind="relationship" relationship="viewControllers" id="97O-Kp-ldR"/>
+                        <segue destination="Jx0-2Q-p4l" kind="relationship" relationship="viewControllers" id="oaC-5C-aoT"/>
+                        <segue destination="Fjq-K0-Cpd" kind="relationship" relationship="viewControllers" id="7i2-5q-KCL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bF-oM-E7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="67.938931297709928" y="3.5211267605633805"/>
+        </scene>
+        <!--Избранное-->
+        <scene sceneID="p0F-mI-Mke">
+            <objects>
+                <viewController id="7ob-ik-tkh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FT7-sX-hGe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="viL-Cu-FJ8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Избранное" image="bookmark.fill" catalog="system" id="qkH-zv-277"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dN2-QA-5eY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="631" y="-869"/>
+        </scene>
+        <!--Объявление-->
+        <scene sceneID="UnU-DP-Dfs">
+            <objects>
+                <viewController id="fMH-O1-BOC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L9o-Hw-YO7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sVA-uf-c3J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Объявление" image="square.grid.3x1.folder.fill.badge.plus" catalog="system" id="GhU-q2-yq6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghX-Dy-DPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="-847"/>
+        </scene>
+        <!--Диалоги-->
+        <scene sceneID="kME-cw-pkh">
+            <objects>
+                <viewController id="Jx0-2Q-p4l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKJ-6J-NFW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vIQ-t3-XU0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Диалоги" image="message.fill" catalog="system" id="VOj-3K-M9n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lr-a6-vta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3090" y="-841"/>
         </scene>
         <!--Автомобили-->
         <scene sceneID="8KK-yx-34X">
@@ -107,13 +158,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark.fill" catalog="system" width="110" height="128"/>
         <image name="car" catalog="system" width="128" height="95"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="65"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="square.grid.3x1.folder.fill.badge.plus" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
