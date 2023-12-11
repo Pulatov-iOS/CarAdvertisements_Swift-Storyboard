@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */; };
 		11FE8EE82B1DC88A00FC69F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */; };
-		11FE8EEA2B1DC88A00FC69F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE92B1DC88A00FC69F9 /* ViewController.swift */; };
+		11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE92B1DC88A00FC69F9 /* CarsAdsViewController.swift */; };
 		11FE8EED2B1DC88A00FC69F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE8EEB2B1DC88A00FC69F9 /* Main.storyboard */; };
 		11FE8EEF2B1DC88C00FC69F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FE8EEE2B1DC88C00FC69F9 /* Assets.xcassets */; };
 		11FE8EF22B1DC88C00FC69F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE8EF02B1DC88C00FC69F9 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		11FE8EE22B1DC88A00FC69F9 /* CarAdvertisements_Swift-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarAdvertisements_Swift-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11FE8EE92B1DC88A00FC69F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11FE8EE92B1DC88A00FC69F9 /* CarsAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsAdsViewController.swift; sourceTree = "<group>"; };
 		11FE8EEC2B1DC88A00FC69F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11FE8EEE2B1DC88C00FC69F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11FE8EF12B1DC88C00FC69F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,23 @@
 		11FE8EE42B1DC88A00FC69F9 /* CarAdvertisements_Swift-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				11FE8EF92B25F69200FC69F9 /* Views */,
 				11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */,
 				11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */,
-				11FE8EE92B1DC88A00FC69F9 /* ViewController.swift */,
 				11FE8EEB2B1DC88A00FC69F9 /* Main.storyboard */,
 				11FE8EEE2B1DC88C00FC69F9 /* Assets.xcassets */,
 				11FE8EF02B1DC88C00FC69F9 /* LaunchScreen.storyboard */,
 				11FE8EF32B1DC88C00FC69F9 /* Info.plist */,
 			);
 			path = "CarAdvertisements_Swift-Storyboard";
+			sourceTree = "<group>";
+		};
+		11FE8EF92B25F69200FC69F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11FE8EE92B1DC88A00FC69F9 /* CarsAdsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FE8EEA2B1DC88A00FC69F9 /* ViewController.swift in Sources */,
+				11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */,
 				11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */,
 				11FE8EE82B1DC88A00FC69F9 /* SceneDelegate.swift in Sources */,
 			);
