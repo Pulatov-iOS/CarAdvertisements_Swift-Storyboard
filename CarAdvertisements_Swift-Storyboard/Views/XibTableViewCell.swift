@@ -179,6 +179,7 @@ extension XibTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource
             iconCell.setImage(photos[indexPath.row], isRadius: isRadius)
             return iconCell
         }
+        
         return UICollectionViewCell()
     }
 }
