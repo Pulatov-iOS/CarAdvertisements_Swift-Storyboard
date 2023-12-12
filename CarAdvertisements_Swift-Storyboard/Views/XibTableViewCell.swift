@@ -156,6 +156,7 @@ final class XibTableViewCell: UITableViewCell {
     }
 }
 
+// MARK: - CollectionViewDelegate/DataSource
 extension XibTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
