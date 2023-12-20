@@ -166,14 +166,14 @@ extension XibTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let iconCell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as? ImageCollectionViewCell {
             
-            var isRadius = ""
+            var isRadius: CornerRoundingImage
             switch indexPath.row {
             case 0:
-                isRadius = "first"
+                isRadius = .firstImage
             case photos.count - 1:
-                isRadius = "last"
+                isRadius = .lastImage
             default:
-                isRadius = ""
+                isRadius = .none
             }
             
             iconCell.setImage(photos[indexPath.row], isRadius: isRadius)

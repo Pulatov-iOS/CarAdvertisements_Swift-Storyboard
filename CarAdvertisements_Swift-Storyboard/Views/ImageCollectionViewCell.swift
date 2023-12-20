@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum CornerRoundingImage {
+    case firstImage
+    case lastImage
+    case none
+}
+
 final class ImageCollectionViewCell: UICollectionViewCell {
 
     // MARK: - @IBOutlet
@@ -20,14 +26,14 @@ final class ImageCollectionViewCell: UICollectionViewCell {
     }
 
     // MARK: - Helpers
-    func setImage(_ image: UIImage, isRadius: String) {
+    func setImage(_ image: UIImage, isRadius: CornerRoundingImage) {
         imageView.image = image
         
         switch isRadius {
-        case "first":
+        case .firstImage:
             imageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
             imageView.layer.cornerRadius = 8
-        case "last":
+        case .lastImage:
             imageView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
             imageView.layer.cornerRadius = 8
         default:
