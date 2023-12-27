@@ -9,17 +9,15 @@ import UIKit
 
 final class ComplainTableViewCell: UITableViewCell {
     
+    // MARK: - @IBOutlet
     @IBOutlet private weak var NumberAdLabel: UILabel!
     
+    // MARK: - @IBAction
     @IBAction func complainButtonTapped(_ sender: Any) {
         print("The complain button is pressed!")
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-    
+    // MARK: - Helpers
     func setNumberAd(_ numberAd: String) {
         NumberAdLabel.text = "ОБЪЯВЛЕНИЕ №" + numberAd
     }

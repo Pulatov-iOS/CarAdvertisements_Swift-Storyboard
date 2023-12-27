@@ -9,8 +9,10 @@ import UIKit
 
 final class PageIconCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - @IBOutlet
     @IBOutlet private weak var iconImageView: UIImageView!
     
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -18,6 +20,7 @@ final class PageIconCollectionViewCell: UICollectionViewCell {
         iconImageView.layer.cornerRadius = 10
     }
 
+    // MARK: - Helpers
     func setImage(_ image: UIImage) {
         iconImageView.image = image
     }

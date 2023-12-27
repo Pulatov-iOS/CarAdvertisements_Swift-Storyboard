@@ -9,16 +9,14 @@ import UIKit
 
 final class DescriptionTableViewCell: UITableViewCell {
 
-    
+    // MARK: - @IBOutlet
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var optionsStackView: UIStackView!
+    
+    // MARK: - Private properties
     private var label = UILabel()
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-
+    // MARK: - Helpers
     func setInformation(title: String, options: [String]) {
         titleLabel.text = title
         options.forEach {

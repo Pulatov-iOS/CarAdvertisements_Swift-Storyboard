@@ -21,7 +21,7 @@
 		11B27E2F2B3C9808005DD823 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */; };
 		11B27E312B3C9822005DD823 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E302B3C9822005DD823 /* DescriptionTableViewCell.swift */; };
 		11B27E332B3C982F005DD823 /* ComplainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E322B3C982F005DD823 /* ComplainTableViewCell.swift */; };
-		11B27E352B3C9A61005DD823 /* AdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E342B3C9A61005DD823 /* AdInformationViewController.swift */; };
+		11B27E372B3CA5BE005DD823 /* AdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E362B3CA5BE005DD823 /* AdInformationViewController.swift */; };
 		11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */; };
 		11FE8EE82B1DC88A00FC69F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */; };
 		11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE92B1DC88A00FC69F9 /* CarsAdsViewController.swift */; };
@@ -45,7 +45,7 @@
 		11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsTableViewCell.swift; path = "/Users/alexander/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Projects/CarAdvertisements_Swift-Storyboard/CarAdvertisements_Swift-Storyboard/Views/ListAds/Ad/DetailsTableViewCell.swift"; sourceTree = "<absolute>"; };
 		11B27E302B3C9822005DD823 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		11B27E322B3C982F005DD823 /* ComplainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplainTableViewCell.swift; sourceTree = "<group>"; };
-		11B27E342B3C9A61005DD823 /* AdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdInformationViewController.swift; path = ../../../../../../../../../../Documents/AdInformationViewController.swift; sourceTree = "<group>"; };
+		11B27E362B3CA5BE005DD823 /* AdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdInformationViewController.swift; sourceTree = "<group>"; };
 		11FE8EE22B1DC88A00FC69F9 /* CarAdvertisements_Swift-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarAdvertisements_Swift-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		11B27E012B3C9628005DD823 /* Ad */ = {
 			isa = PBXGroup;
 			children = (
-				11B27E342B3C9A61005DD823 /* AdInformationViewController.swift */,
+				11B27E362B3CA5BE005DD823 /* AdInformationViewController.swift */,
 				11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */,
 				11B27E2C2B3C97FD005DD823 /* DetailsTableViewCell.xib */,
 				11B27E282B3C97D5005DD823 /* PageIconCollectionViewCell.swift */,
@@ -235,7 +235,7 @@
 				11B27E332B3C982F005DD823 /* ComplainTableViewCell.swift in Sources */,
 				11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */,
 				117B072C2B27211F00F92499 /* Car.swift in Sources */,
-				11B27E352B3C9A61005DD823 /* AdInformationViewController.swift in Sources */,
+				11B27E372B3CA5BE005DD823 /* AdInformationViewController.swift in Sources */,
 				117B07362B2757AE00F92499 /* PriceManager.swift in Sources */,
 				11B27E2F2B3C9808005DD823 /* DetailsTableViewCell.swift in Sources */,
 				11B27E292B3C97D5005DD823 /* PageIconCollectionViewCell.swift in Sources */,

@@ -8,17 +8,16 @@
 import UIKit
 
 final class DetailsTableViewCell: UITableViewCell {
-
-    private var photos = [UIImage]()
-    private let layout = UICollectionViewFlowLayout()
     
+    // MARK: - @IBOutlet
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
     @IBOutlet private weak var usdPrice: UILabel!
     @IBOutlet private weak var leasingPriceLabel: UILabel!
     @IBOutlet private weak var photoCollectionView: UICollectionView!
-    @IBOutlet weak var leasingView: UIView!
+    @IBOutlet private weak var leasingView: UIView!
     
+    // MARK: - @IBAction
     @IBAction func priceButtonTapped(_ sender: Any) {
         print("Price descriptions are open!")
     }
@@ -38,30 +37,21 @@ final class DetailsTableViewCell: UITableViewCell {
     @IBAction func favouritesButtonTapped(_ sender: Any) {
         print("The favourites button is pressed!")
     }
+    
+    // MARK: - Private properties
+    private var photos = [UIImage]()
+    private let layout = UICollectionViewFlowLayout()
 
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
        
-        photoCollectionView.delegate = self
-        photoCollectionView.dataSource = self
-        photoCollectionView.register(UINib(nibName: "PageIconCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PageIconCollectionViewCell")
-        photoCollectionView.collectionViewLayout = layout
-        layout.itemSize = CGSize(width: 350, height: 220)
-        layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 2
-        
-        leasingView.layer.cornerRadius = 12
+        configPhotoCollectionView()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
-    
+    // MARK: - Helpers
     func setInformation(_ ad: Car) {
-        
         let priceManager = PriceManager()
-        
         nameLabel.text = ad.name
         priceLabel.text = "\(Int(ad.price))"
         usdPrice.text = "≈ \(Int(priceManager.usdPrice(price: ad.price))) $"
@@ -73,8 +63,19 @@ final class DetailsTableViewCell: UITableViewCell {
         photoCollectionView.reloadData()
     }
     
+    private func configPhotoCollectionView() {
+        photoCollectionView.delegate = self
+        photoCollectionView.dataSource = self
+        photoCollectionView.register(UINib(nibName: "PageIconCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PageIconCollectionViewCell")
+        photoCollectionView.collectionViewLayout = layout
+        layout.itemSize = CGSize(width: 350, height: 220)
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 2
+        leasingView.layer.cornerRadius = 12
+    }
 }
 
+// MARK: - CollectionViewDelegate/DataSource
 extension DetailsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
