@@ -163,6 +163,11 @@ extension CarsAdsViewController: UITableViewDataSource, UITableViewDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let adInformationViewController = storyboard.instantiateViewController(identifier: "AdInformationViewController") as? AdInformationViewController {
             adInformationViewController.setCurrentAd(currentAd)
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = ""
+            navigationItem.backBarButtonItem = backItem
+            
             navigationController?.pushViewController(adInformationViewController, animated: true)
         }
     }
@@ -195,6 +200,11 @@ extension CarsAdsViewController: XibTableViewCellDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let adInformationViewController = storyboard.instantiateViewController(identifier: "AdInformationViewController") as? AdInformationViewController {
             adInformationViewController.setCurrentAd(currentAd)
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = ""
+            navigationItem.backBarButtonItem = backItem
+            
             navigationController?.pushViewController(adInformationViewController, animated: true)
         }
     }

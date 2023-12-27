@@ -16,12 +16,12 @@
 		11B27E172B3C96F0005DD823 /* ComplainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B27E162B3C96F0005DD823 /* ComplainTableViewCell.xib */; };
 		11B27E1B2B3C9700005DD823 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B27E1A2B3C9700005DD823 /* DescriptionTableViewCell.xib */; };
 		11B27E1D2B3C970D005DD823 /* PageIconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B27E1C2B3C970D005DD823 /* PageIconCollectionViewCell.xib */; };
-		11B27E1F2B3C975F005DD823 /* AdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E1E2B3C975F005DD823 /* AdInformationViewController.swift */; };
 		11B27E292B3C97D5005DD823 /* PageIconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E282B3C97D5005DD823 /* PageIconCollectionViewCell.swift */; };
 		11B27E2D2B3C97FD005DD823 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B27E2C2B3C97FD005DD823 /* DetailsTableViewCell.xib */; };
 		11B27E2F2B3C9808005DD823 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */; };
 		11B27E312B3C9822005DD823 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E302B3C9822005DD823 /* DescriptionTableViewCell.swift */; };
 		11B27E332B3C982F005DD823 /* ComplainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E322B3C982F005DD823 /* ComplainTableViewCell.swift */; };
+		11B27E352B3C9A61005DD823 /* AdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B27E342B3C9A61005DD823 /* AdInformationViewController.swift */; };
 		11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */; };
 		11FE8EE82B1DC88A00FC69F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */; };
 		11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE8EE92B1DC88A00FC69F9 /* CarsAdsViewController.swift */; };
@@ -37,15 +37,15 @@
 		117B07312B27517500F92499 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		117B07322B27517500F92499 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		117B07352B2757AE00F92499 /* PriceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceManager.swift; sourceTree = "<group>"; };
-		11B27E162B3C96F0005DD823 /* ComplainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ComplainTableViewCell.xib; path = ../../../../../../../../.Trash/ComplainTableViewCell.xib; sourceTree = "<group>"; };
-		11B27E1A2B3C9700005DD823 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionTableViewCell.xib; path = ../../../../../../../../.Trash/DescriptionTableViewCell.xib; sourceTree = "<group>"; };
-		11B27E1C2B3C970D005DD823 /* PageIconCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PageIconCollectionViewCell.xib; path = ../../../../../../../../.Trash/PageIconCollectionViewCell.xib; sourceTree = "<group>"; };
-		11B27E1E2B3C975F005DD823 /* AdInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdInformationViewController.swift; path = ../../../../../../../../.Trash/AdInformationViewController.swift; sourceTree = "<group>"; };
-		11B27E282B3C97D5005DD823 /* PageIconCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageIconCollectionViewCell.swift; path = ../../../../../../../../.Trash/PageIconCollectionViewCell.swift; sourceTree = "<group>"; };
-		11B27E2C2B3C97FD005DD823 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailsTableViewCell.xib; path = ../../../../../../../../.Trash/DetailsTableViewCell.xib; sourceTree = "<group>"; };
-		11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsTableViewCell.swift; path = ../../../../../../../../.Trash/DetailsTableViewCell.swift; sourceTree = "<group>"; };
-		11B27E302B3C9822005DD823 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionTableViewCell.swift; path = ../../../../../../../../.Trash/DescriptionTableViewCell.swift; sourceTree = "<group>"; };
-		11B27E322B3C982F005DD823 /* ComplainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComplainTableViewCell.swift; path = ../../../../../../../../.Trash/ComplainTableViewCell.swift; sourceTree = "<group>"; };
+		11B27E162B3C96F0005DD823 /* ComplainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComplainTableViewCell.xib; sourceTree = "<group>"; };
+		11B27E1A2B3C9700005DD823 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		11B27E1C2B3C970D005DD823 /* PageIconCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageIconCollectionViewCell.xib; sourceTree = "<group>"; };
+		11B27E282B3C97D5005DD823 /* PageIconCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageIconCollectionViewCell.swift; sourceTree = "<group>"; };
+		11B27E2C2B3C97FD005DD823 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsTableViewCell.swift; path = "/Users/alexander/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Projects/CarAdvertisements_Swift-Storyboard/CarAdvertisements_Swift-Storyboard/Views/ListAds/Ad/DetailsTableViewCell.swift"; sourceTree = "<absolute>"; };
+		11B27E302B3C9822005DD823 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		11B27E322B3C982F005DD823 /* ComplainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplainTableViewCell.swift; sourceTree = "<group>"; };
+		11B27E342B3C9A61005DD823 /* AdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdInformationViewController.swift; path = ../../../../../../../../../../Documents/AdInformationViewController.swift; sourceTree = "<group>"; };
 		11FE8EE22B1DC88A00FC69F9 /* CarAdvertisements_Swift-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarAdvertisements_Swift-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE8EE52B1DC88A00FC69F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FE8EE72B1DC88A00FC69F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		11B27E012B3C9628005DD823 /* Ad */ = {
 			isa = PBXGroup;
 			children = (
-				11B27E1E2B3C975F005DD823 /* AdInformationViewController.swift */,
+				11B27E342B3C9A61005DD823 /* AdInformationViewController.swift */,
 				11B27E2E2B3C9808005DD823 /* DetailsTableViewCell.swift */,
 				11B27E2C2B3C97FD005DD823 /* DetailsTableViewCell.xib */,
 				11B27E282B3C97D5005DD823 /* PageIconCollectionViewCell.swift */,
@@ -232,10 +232,10 @@
 				117B07332B27517500F92499 /* ImageCollectionViewCell.swift in Sources */,
 				11FE8EEA2B1DC88A00FC69F9 /* CarsAdsViewController.swift in Sources */,
 				11B27E312B3C9822005DD823 /* DescriptionTableViewCell.swift in Sources */,
-				11B27E1F2B3C975F005DD823 /* AdInformationViewController.swift in Sources */,
 				11B27E332B3C982F005DD823 /* ComplainTableViewCell.swift in Sources */,
 				11FE8EE62B1DC88A00FC69F9 /* AppDelegate.swift in Sources */,
 				117B072C2B27211F00F92499 /* Car.swift in Sources */,
+				11B27E352B3C9A61005DD823 /* AdInformationViewController.swift in Sources */,
 				117B07362B2757AE00F92499 /* PriceManager.swift in Sources */,
 				11B27E2F2B3C9808005DD823 /* DetailsTableViewCell.swift in Sources */,
 				11B27E292B3C97D5005DD823 /* PageIconCollectionViewCell.swift in Sources */,
