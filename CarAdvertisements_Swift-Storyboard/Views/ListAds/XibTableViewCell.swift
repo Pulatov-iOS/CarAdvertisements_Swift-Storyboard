@@ -11,6 +11,7 @@ protocol XibTableViewCellDelegate: AnyObject {
     func hiddenButtonTap(index: IndexPath?)
     func favoriteButtonTap(index: IndexPath?)
     func leasingButtonTap(index: IndexPath?)
+    func collectionButtonTap(index: IndexPath?)
 }
 
 final class XibTableViewCell: UITableViewCell {
@@ -181,5 +182,9 @@ extension XibTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource
         }
         
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.collectionButtonTap(index: index)
     }
 }

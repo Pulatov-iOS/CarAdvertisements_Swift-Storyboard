@@ -49,6 +49,36 @@
             </objects>
             <point key="canvasLocation" x="1921.3740458015266" y="3.5211267605633805"/>
         </scene>
+        <!--Ad Information View Controller-->
+        <scene sceneID="FvD-nP-Y9X">
+            <objects>
+                <viewController storyboardIdentifier="AdInformationViewController" id="OM6-Pc-fID" customClass="AdInformationViewController" customModule="CarAdvertisements_Swift_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxC-Ro-uS0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RUc-Dw-AAe">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jca-oY-aVb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jca-oY-aVb" firstAttribute="bottom" secondItem="RUc-Dw-AAe" secondAttribute="bottom" id="1T8-TB-HbB"/>
+                            <constraint firstItem="RUc-Dw-AAe" firstAttribute="leading" secondItem="Jca-oY-aVb" secondAttribute="leading" id="JHh-oD-BuS"/>
+                            <constraint firstItem="RUc-Dw-AAe" firstAttribute="top" secondItem="Jca-oY-aVb" secondAttribute="top" id="Ks4-jp-Qhx"/>
+                            <constraint firstItem="Jca-oY-aVb" firstAttribute="trailing" secondItem="RUc-Dw-AAe" secondAttribute="trailing" id="tOD-6Y-Gxo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="RUc-Dw-AAe" id="2qn-7x-1Si"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puw-7y-Kgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2844" y="12"/>
+        </scene>
         <!--Прочее-->
         <scene sceneID="FE9-ae-6ro">
             <objects>
@@ -167,7 +197,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

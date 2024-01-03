@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CarsAdsViewController: UIViewController, XibTableViewCellDelegate {
+final class CarsAdsViewController: UIViewController {
     
     // MARK: - @IBOutlet
     @IBOutlet private weak var carAdsTableView: UITableView!
@@ -159,7 +159,17 @@ extension CarsAdsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Ad \"\(visibleAds[indexPath.row].name)\" tapped!")
+        let currentAd = ads[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let adInformationViewController = storyboard.instantiateViewController(identifier: "AdInformationViewController") as? AdInformationViewController {
+            adInformationViewController.setCurrentAd(currentAd)
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = ""
+            navigationItem.backBarButtonItem = backItem
+            
+            navigationController?.pushViewController(adInformationViewController, animated: true)
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -179,6 +189,24 @@ extension CarsAdsViewController: UITableViewDataSource, UITableViewDelegate {
                     }
                 }
         self.lastContentOffset = scrollView.contentOffset.y
+    }
+    
+}
+
+extension CarsAdsViewController: XibTableViewCellDelegate {
+    
+    func collectionButtonTap(index: IndexPath?) {
+        let currentAd = ads[index?.row ?? 0]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let adInformationViewController = storyboard.instantiateViewController(identifier: "AdInformationViewController") as? AdInformationViewController {
+            adInformationViewController.setCurrentAd(currentAd)
+            
+            let backItem = UIBarButtonItem()
+            backItem.title = ""
+            navigationItem.backBarButtonItem = backItem
+            
+            navigationController?.pushViewController(adInformationViewController, animated: true)
+        }
     }
     
     func hiddenButtonTap(index: IndexPath?) {
